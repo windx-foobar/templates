@@ -12,7 +12,7 @@ export default createUnplugin((options = {}, meta) => {
   let cached;
 
   return {
-    name: 'vozvrat-online-utils-plugin',
+    name: 'utils-plugin',
     enforce: 'pre',
     // async buildStart() {
     //   cached = await useAdminEnums();

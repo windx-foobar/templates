@@ -1,12 +1,11 @@
 {
-  "name": "",
+  "name": "ttt",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "private": true,
   "workspaces": [
-    "crm",
-    "lk",
+    "app",
     "packages/*"
   ],
   "devDependencies": {
@@ -17,14 +16,14 @@
     "mri": "^1.2.0"
   },
   "scripts": {
-    "dev:lk": "yarn  --cwd lk dev",
-    "build:lk": "yarn  --cwd lk build",
-    "prepare:lk": "yarn --cwd lk prepare",
-    "start:lk": "yarn --cwd lk preview",
+    "dev:app": "yarn  --cwd app dev",
+    "build:app": "yarn  --cwd app build",
+    "prepare:app": "yarn --cwd app prepare",
+    "start:app": "yarn --cwd app preview",
     "build:packages": "yarn --cwd packages/config build && yarn --cwd packages/utils build && yarn --cwd packages/shared build && yarn --cwd packages/cli build",
-    "build": "yarn build:packages;yarn build:lk",
+    "build": "yarn build:packages;yarn build:app",
     "release": "changelogen --release",
-    "postinstall": "yarn --cwd lk prepare"
+    "postinstall": "yarn build:packages"
   },
   "packageManager": "yarn@1.22.19",
   "engines": {

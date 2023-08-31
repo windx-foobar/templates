@@ -49,42 +49,13 @@ export default defineConfig({
    * @description Общая конфигурация
    */
   shared: {
-    name: 'Возврат Онлайн',
-    nodemailer: {
-      enable: !!env.NODEMAILER_HOST && !!env.NODEMAILER_PORT,
-      host: env.NODEMAILER_HOST,
-      port: env.NODEMAILER_PORT,
-      ...(env.NODEMAILER_USERNAME && env.NODEMAILER_PASSWORD
-        ? {
-            auth: {
-              user: env.NODEMAILER_USERNAME,
-              pass: env.NODEMAILER_PASSWORD
-            }
-          }
-        : {}),
-      defaultFrom: env.NODEMAILER_DEFAULT_FROM
-    }
+    name: 'Nuxt3 boilerplate'
   },
 
   /**
-   * @description Конфигурация для crm
+   * @description Nuxt3 App config
    */
-  crm: {
-    host: env.MONOREPO_CRM_HOST || '0.0.0.0',
-    port: env.MONOREPO_CRM_PORT || '3000',
-    dir: resolve(__dirname, '../../..', env.MONOREPO_CRM_PATH || './crm'),
-    sessions: {
-      public: {
-        password: env.SITE_SESSION_KEY,
-        sslOnly: typeof env.SESSION_SSL_ONLY === 'boolean' ? env.SESSION_SSL_ONLY : true
-      }
-    }
-  },
-
-  /**
-   * @description Конфигурация для клиентской части (сайта/лк)
-   */
-  lk: {
+  app: {
     host: env.MONOREPO_LK_HOST || '0.0.0.0',
     port: env.MONOREPO_LK_PORT || '3000',
     dir: resolve(__dirname, '../../..', env.MONOREPO_LK_PATH || './crm')

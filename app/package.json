@@ -1,0 +1,21 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "node ../packages/cli/dist/cli.mjs build:app",
+    "dev": "node ../packages/cli/dist/cli.mjs dev:app",
+    "prepare": "node ../packages/cli/dist/cli.mjs prepare:app",
+    "start": "node ../packages/cli/dist/cli.mjs start:app",
+    "preview": "node ../packages/cli/dist/cli.mjs preview:app"
+  },
+  "devDependencies": {
+    "@types/node": "^18",
+    "nuxt": "~3.5.3",
+    "@fortawesome/vue-fontawesome": "^3.0.3",
+    "@fortawesome/fontawesome-svg-core": "^6.4.0",
+    "@fortawesome/free-solid-svg-icons": "^6.4.0",
+    "@fortawesome/free-brands-svg-icons": "^6.4.0",
+    "perfect-debounce": "^1.0.0"
+  }
+}

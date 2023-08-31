@@ -11,6 +11,5 @@ export default defineBuildConfig({
     emitCJS: true,
     cjsBridge: true
   },
-  externals: ['nodemailer'],
   failOnWarn: isProd
 });

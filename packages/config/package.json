@@ -23,8 +23,5 @@
     "dotenv": "^16.0.3",
     "dotenv-parse-variables": "^2.0.0",
     "unbuild": "^1.1.2"
-  },
-  "devDependencies": {
-    "@types/nodemailer": "^6.4.7"
   }
 }

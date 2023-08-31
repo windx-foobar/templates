@@ -45,7 +45,7 @@ export async function loadWorkspace(dir: string) {
 
   const packages: Package[] = [];
 
-  for (const pkgDir of [...pkgDirs/*, 'lk'*/]) {
+  for (const pkgDir of [...pkgDirs, 'app']) {
     const pkg = await loadPackage(pkgDir);
     if (!pkg.data.name) {
       continue;
