@@ -1,8 +1,9 @@
+// FIXME: SET CONFIG
+
 #!/usr/bin/node
 
 import { execa, Options } from 'execa';
 import mri from 'mri';
-// import config from '@ttt/config';
 
 type AvailableCommands =
   | 'dev:app'

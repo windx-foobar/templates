@@ -1,6 +1,6 @@
+// FIXME: SET CONFIG
 import { NuxtConfig } from '@nuxt/schema';
 import { NuxtConfig as _NuxtConfig } from 'nuxt/schema';
-import config from '@ttt/config';
 
 const HOST = process.env.HOST;
 const PORT = process.env.PORT;
