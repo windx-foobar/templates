@@ -1,5 +1,5 @@
 {
-  "name": "ttt",
+  "name": "",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
@@ -22,8 +22,7 @@
     "start:app": "yarn --cwd app preview",
     "build:packages": "yarn --cwd packages/config build && yarn --cwd packages/utils build && yarn --cwd packages/shared build && yarn --cwd packages/cli build",
     "build": "yarn build:packages;yarn build:app",
-    "release": "changelogen --release",
-    "postinstall": "yarn build:packages"
+    "release": "changelogen --release"
   },
   "packageManager": "yarn@1.22.19",
   "engines": {
