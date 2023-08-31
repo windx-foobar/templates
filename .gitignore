@@ -1,0 +1,16 @@
+.idea/*
+!.idea/codeStyles
+!.idea/prettier.xml
+
+.output
+
+node_modules
+dist
+.env
+.nuxt3
+.nuxt
+_nuxt
+#frontend/public/hash.html
+#site/data
+
+yarn-error.log

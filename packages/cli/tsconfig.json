@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": false,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "strict": false,
+    "allowJs": true,
+    "resolveJsonModule": true
+  },
+  "include": ["src", "../../node_modules/@types/node/*.d.ts"]
+}
